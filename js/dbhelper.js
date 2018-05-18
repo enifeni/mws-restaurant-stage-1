@@ -154,6 +154,13 @@ class DBHelper {
   }
 
   /**
+   * Restaurant image al text.
+   */
+  static imageAltTextForRestaurant(restaurant) {
+    return (`${restaurant.alt}`);
+  }
+
+  /**
    * Map marker for a restaurant.
    */
   static mapMarkerForRestaurant(restaurant, map) {
@@ -162,8 +169,8 @@ class DBHelper {
       title: restaurant.name,
       url: DBHelper.urlForRestaurant(restaurant),
       map: map,
-      animation: google.maps.Animation.DROP}
-    );
+      animation: google.maps.Animation.DROP
+    });
     return marker;
   }
 
