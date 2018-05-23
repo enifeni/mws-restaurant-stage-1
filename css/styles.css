@@ -20,12 +20,12 @@ body {
 }
 
 a {
-  color: #6c33db;
+  color: #e91e63;
   text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: #e91e63;
+  color: #6c33db;
   text-decoration: none;
 }
 
@@ -37,9 +37,9 @@ main {
 }
 
 #footer {
-  background-color: #252831;
+  background-color: black;
   color: #aaa;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   letter-spacing: 1px;
   padding: 25px;
   text-align: center;
@@ -186,10 +186,12 @@ nav h1 a {
 }
 
 #restaurants-list li a {
-  background-color: #e91e63;
+  background-color: #b7184e;
   border-bottom: 3px solid #eee;
   color: #fff;
   font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
   margin: 15px;
   padding: 8px 30px 10px;
   text-transform: uppercase;
@@ -361,4 +363,8 @@ width: 30%;
   #restaurants-list li {
     width: 80%;
   }
+}
+
+select {
+  display: block;
 }
