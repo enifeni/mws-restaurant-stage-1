@@ -3,7 +3,6 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
 
     caches.open('version1').then(function(cache) {
-      console.log('caching');
       return cache.addAll([
         '/',
         '/index.html',
